@@ -1,0 +1,20 @@
+{
+  "name": "npm-typescript-base",
+  "version": "1.0.0",
+  "description": "Base project with npm, typescript and nodemon set up",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.2"
+  }
+}
